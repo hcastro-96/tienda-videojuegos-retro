@@ -21,4 +21,9 @@ public class RetroConsole extends Product {
     public String getMediaType() { return mediaType; }
     public int getGeneration() { return generation; }
 
+    // toString
+    @Override public String toString(){
+        return super.toString() + " | " + (isPortable ? "Consola Portátil" : "Consola de Sobremesa") + " | Formato: " + mediaType + " | " + generation + "° Generación";
+    }
+
 }

@@ -16,7 +16,7 @@ public class VideoGame extends Product {
     this.isMultiplayer = isMultiplayer;
     this.gameGenre = gameGenre;
     this.packagingType = packagingType;
-    this. region = region;
+    this.region = region;
     }
 
     // Getters
@@ -25,5 +25,10 @@ public class VideoGame extends Product {
     public String getGameGenre(){return gameGenre;}
     public String getPackagingType(){return packagingType;}
     public String getRegion(){return region;}
+
+    // toString
+    @Override public String toString() {
+        return super.toString() + " | Consola: " + consoleGame + " | " + (isMultiplayer ? "Juego Multijugador" : "Juego Singleplayer") + " | Género: " + gameGenre + " | Formato: " + packagingType + " | Región: " + region;
+    }
 
 }
