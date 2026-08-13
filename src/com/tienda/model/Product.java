@@ -30,5 +30,10 @@ public class Product {
         return stock;
     }
 
+    // toString
+    @Override public String toString() {
+        return title + " | " + year + " | $" + price + " | Stock: " + stock;
+    }
+
 
 }
