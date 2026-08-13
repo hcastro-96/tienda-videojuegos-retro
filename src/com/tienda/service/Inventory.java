@@ -1,5 +1,8 @@
 package com.tienda.service;
 import com.tienda.model.Product;
+import com.tienda.model.RetroConsole;
+import com.tienda.model.VideoGame;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,8 +18,18 @@ public class Inventory {
 
     // Metodo mostrar catalogo
     public void showCatalog(){
+        System.out.println("- Consolas -");
         for (Product product : productList) {
-            System.out.println(product);
+            if (product instanceof RetroConsole) {
+                System.out.println(product);
+            }
+        }
+
+        System.out.println("\n- Videojuegos -");
+        for (Product product : productList) {
+            if (product instanceof VideoGame) {
+                System.out.println(product);
+            }
         }
     }
 
