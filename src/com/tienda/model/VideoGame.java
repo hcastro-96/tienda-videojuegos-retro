@@ -25,7 +25,7 @@ public class VideoGame extends Product {
 
     // toString
     @Override public String toString() {
-        return super.toString() + " | Consola: " + consoleGame + " | " + (isMultiplayer ? "Juego Multijugador" : "Juego Singleplayer") + " | Género: " + gameGenre + " | Formato: " + " | Región: " + region;
+        return super.toString() + " | Consola: " + consoleGame + " | " + (isMultiplayer ? "Juego Multijugador" : "Juego Singleplayer") + " | Género: " + gameGenre + " | Región: " + region;
     }
 
 }
