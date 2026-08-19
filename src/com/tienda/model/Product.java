@@ -32,7 +32,7 @@ public class Product {
 
     // toString
     @Override public String toString() {
-        return title + " | " + year + " | $" + price + " | Stock: " + stock;
+        return title + " | " + year + " | $" + price + " | Stock: " + stock + " unidades";
     }
 
 
